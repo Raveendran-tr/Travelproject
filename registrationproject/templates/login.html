@@ -7,7 +7,7 @@
           #fm{
     border-radius:5px;
     width:490px;
-    background-color:cyan;
+    background-color:palegreen;
     font-size:130%;
     padding:25px;
     }
@@ -15,7 +15,7 @@
 </head>
 <body id="fm">
 
-<form action="login" method="post">
+<form action="" method="post">
     {% csrf_token %}
     <label>username</label>
     <input type="text" name="username" placeholder="username"></input><br>
@@ -24,5 +24,8 @@
     <input type="submit">
 
 </form>
+{% for i in messages%}
+    {{i}}
+{% endfor %}
 </body>
 </html>

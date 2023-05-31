@@ -27,17 +27,18 @@
 				<div class="col">
 					<div class="header_content d-flex flex-row align-items-center justify-content-start">
 						<div class="header_content_inner d-flex flex-row align-items-end justify-content-start">
-							<div class="logo"><a href="index.html">Travello</a></div>
+							<div class="logo"><a href="">Travello</a></div>
 							<nav class="main_nav">
 								<ul class="d-flex flex-row align-items-start justify-content-start">
-									<li><a href="index.html">Home</a></li>
-									<li class="active"><a href="about.html">About us</a></li>
+									<li><a href="">Home</a></li>
+									<li class="active"><a href="register/about">About us</a></li>
 									{% if user.is_authenticated %}
 									<li>Hello {{user.username}}</li>
-									<li><a href="registrationapp/logout">Logout</a></li>
+									<li><a href="register/logout">Logout</a></li>
 									{% else %}
-									<li><a href="registrationapp/register">Register</a></li>
-									<li><a href="registrationapp/login">Login</a></li>
+
+									<li><a href="register/register">Register</a></li>
+									<li><a href="register/login">Login</a></li>
 									{% endif %}
 								</ul>
 							</nav>
@@ -70,16 +71,16 @@
 
 	<div class="menu">
 		<div class="menu_header d-flex flex-row align-items-center justify-content-start">
-			<div class="menu_logo"><a href="index.html">Travello</a></div>
+			<div class="menu_logo"><a href="index1.html">Travello</a></div>
 			<div class="menu_close_container ml-auto"><div class="menu_close"><div></div><div></div></div></div>
 		</div>
 		<div class="menu_content">
 			<ul>
-				<li><a href="inex.html">Home</a></li>
+				<li><a href="index1.html">Home</a></li>
 				<li><a href="about.html">About us</a></li>
 				<li><a href="#">Services</a></li>
-				<li><a href="news.html">News</a></li>
-				<li><a href="contact.html">Contact</a></li>
+				<li><a href="#">News</a></li>
+				<li><a href="#">Contact</a></li>
 			</ul>
 		</div>
 		<div class="menu_social">
@@ -198,75 +199,68 @@
 			</div>
 		</div>
 	</div>
+<!-- Why Choose Us -->
 
+	<div class="why">
+		<div class="parallax_background parallax-window" data-parallax="scroll" data-image-src="{% static 'images/why.jpg'%}" data-speed="0.8"></div>
+		<div class="container">
+			<div class="row">
+				<div class="col text-center">
+					<div class="section_subtitle">simply amazing places</div>
+					<div class="section_title"><h2><B>OUR TEAM</B></h2></div>
+				</div>
+			</div>
+			<div class="row why_row">
 
-	<!-- Why Choose Us -->
-		<div class="col-lg-4 why_col">
-					<div class="why_item">
+				<!-- Why item -->
+				<div class="col-lg-4 why_col">
+					<div class="why_item"style="height:90%;">
 						<div class="why_image">
-							<img src="{% static 'images/virat.jpeg'%}" alt="">
+							<img src="{% static 'images/msd.jpeg'%}" alt=""style="height:400px;width:370px;">
 							<div class="why_icon d-flex flex-column align-items-center justify-content-center">
 								<img src="{% static 'images/why_1.svg'%}" alt="">
 							</div>
 						</div>
 						<div class="why_content text-center">
-							<div class="why_title">Team Player</div>
+							<div class="why_title">M S DHONI</div>
 							<div class="why_text">
-								<p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour</p>
+								<p style="padding:5px;">Pellentesque sit amet elementum ccumsan sit amet mattis eget, tristique at leo.</p>
 							</div>
 						</div>
 					</div>
 				</div>
 
-
-
-
+				<!-- Why item -->
 				<div class="col-lg-4 why_col">
-					<div class="why_item">
+					<div class="why_item"style="height:90%;">
 						<div class="why_image">
-							<img src="{% static 'images/sanju.jpg'%}" alt="">
-							<div class="why_icon d-flex flex-column align-items-center justify-content-center">
-								<img src="{% static 'images/why_1.svg'%}" alt="">
-							</div>
-						</div>
-						<div class="why_content text-center">
-							<div class="why_title">Team Player</div>
-							<div class="why_text">
-								<p>when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
-							</div>
-						</div>
-					</div>
-				</div>
-
-				<div class="col-lg-4 why_col">
-					<div class="why_item">
-						<div class="why_image">
-							<img src="{% static 'images/vk.jpg'%}" alt="">
+							<img src="{% static 'images/cele.jpg'%}" alt=""style="height:400px;width:370px;">
 							<div class="why_icon d-flex flex-column align-items-center justify-content-center">
 								<img src="{% static 'images/why_2.svg'%}" alt="">
 							</div>
 						</div>
 						<div class="why_content text-center">
-							<div class="why_title">Team Player</div>
+							<div class="why_title">SURYA KUMAR</div>
 							<div class="why_text">
-								<p>Pellentesque sit amet elementum ccumsan sit amet mattis eget, tristique at leo.</p>
+								<p style="padding:5px;">Pellentesque sit amet elementum ccumsan sit amet mattis eget, tristique at leo.</p>
 							</div>
 						</div>
 					</div>
 				</div>
 
+				<!-- Why item -->
 				<div class="col-lg-4 why_col">
-					<div class="why_item">
+					<div class="why_item"style="height:90%;">
 						<div class="why_image">
-							<img src="{% static 'images/msd.jpeg'%}" alt="">
+							<img src="{% static 'images/vk.jpg'%}" alt="" style="height:400px;width:370px;">
 							<div class="why_icon d-flex flex-column align-items-center justify-content-center">
 								<img src="{% static 'images/why_3.svg'%}" alt="">
 							</div>
 						</div>
 						<div class="why_content text-center">
-							<div class="why_title">Captain</div>
+							<div class="why_title">VIRAT KOHLI</div>
 							<div class="why_text">
-								<p>Pellentesque sit amet elementum ccumsan sit amet mattis eget, tristique at leo.</p>
+								<p style="padding:5px;">Pellentesque sit amet elementum ccumsan sit amet mattis eget, tristique at leo.</p>
 							</div>
 						</div>
 					</div>
@@ -275,7 +269,10 @@
 			</div>
 		</div>
 	</div>
-	<!-- Team -->
+
+
+
+
 
 	<div class="team">
 		<div class="container">
